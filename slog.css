@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    transition: background-color 600ms;
+    background: whitesmoke;
+}
+
+/*Temni nacin*/
+.temni-nacin {
+    background: #181818;
+    color: white;
+}
+
+.temni-nacin > .glava-strani{
+    background: #000000;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.temni-nacin .starogram {
+    content: url("slike/temni-nacin/logo-temno.png");
+}
+
+.temni-nacin .objava {
+    background: #000000;
+}
+
+.temni-nacin .gumb-vsecek {
+    background: url("slike/temni-nacin/slika-srce-temno.png") no-repeat;
+    background-size: cover;
+}
+
+.temni-nacin .gumb-opomba {
+    background: url("slike/temni-nacin/slika-opomba-temno.png") no-repeat;
+    background-size: cover;
+}
+
+.temni-nacin .gumb-deli {
+    background: url("slike/temni-nacin/slika-zs-temno.png") no-repeat;
+    background-size: cover;
+}
+
+.temni-nacin .izbira-nacin {
+    transform: translateY(0) rotateZ(0deg);
+    transition: all 1s ease-out;
+    content: url("slike/temni-nacin/svetli-nacin2.png");
+}
+
+/*<pisave>*/
+:root {
+    --vp-900: clamp(4.5rem, 7.5vw + 1rem, 9.375rem);
+    --vp-800: 3.5rem;
+    --vp-750: 3.5rem;
+    --vp-700: 1.5rem;
+    --vp-600: 1.2rem;
+    --vp-500: 1rem;
+    --vp-400: 0.9375rem;
+    --vp-300: 1rem;
+    --vp-200: 0.875rem;
+}
+
+@media (min-width: 35em) {
+    :root {
+        /* Velikost pisave */
+        --vp-800: 5rem;
+        --vp-750: 5rem;
+        --vp-700: 2.5rem;
+        --vp-600: 1.5rem;
+        --vp-500: 1.25rem;
+        --vp-400: 1rem;
+    }
+}
+
+@media (min-width: 45em) {
+    :root {
+        /* Velikost pisave */
+        --vp-800: 6.25rem;
+        --vp-750: 5.3rem;
+        --vp-700: 3.5rem;
+        --vp-600: 1.7em;
+        --vp-500: 1.75rem;
+        --vp-400: 1.125rem;
+    }
+}
+/*</pisave>*/
+h1 {
+    font-size: var(--vp-700);
+}
+
+h2 {
+    font-size: var(--vp-600);
+}
+
+p {
+    font-size: var(--vp-300);
+}
+
+
+
+
+/*Večnamenski classi*/
+
+.nosilec {
+    /*max-width: clamp(20rem, 60vw + 1px, 30rem);*/
+    /*margin: 0 auto;*/
+}
+
+/*Posamezno*/
+
+/*Glava*/
+.nosilec-glave {
+    margin: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.glava-strani {
+    transition: background-color 600ms;
+    border-bottom: 1px solid #C6C6C6;
+    padding-bottom: .5rem;
+    background: white;
+}
+
+.nosilec-glave  .starogram {
+    height: clamp(5rem, 10vw,7rem);
+}
+
+.nosilec-nacin-racun {
+    display: flex;
+    align-items: center;
+    margin-left: .2rem;
+    column-gap: clamp(.01rem, 2vw + 5px, 2rem);
+
+}
+
+.izbira-nacin {
+    transform: translateX(10%) rotateZ(50deg);
+    transition: all 1s ease-out;
+    cursor: pointer;
+    height: clamp(2.2rem, 10vw + 1px,2.2rem);
+}
+
+.slika-racuna {
+    height: clamp(3rem, 6vw,3rem);
+    border-radius: 50%;
+}
+
+/*Objave*/
+.objave {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    justify-content: center;
+    margin: 0;
+}
+
+@media (max-width: 10em) {
+    .objave {
+        justify-content: start;
+    }
+}
+
+.objava {
+    transition: background-color 600ms;
+    margin: clamp(.4rem, 10vw + 1px, .6rem) 0;
+    background: white;
+    border-radius: .6rem;
+    padding: 1rem;
+    max-width: clamp(20rem, 40vw + 1px, 30rem);
+}
+
+/*Glava objave*/
+.glava-objave {
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    margin-bottom: .8rem;
+}
+
+.glava-objave img {
+    height: clamp(2rem, 6vw, 3rem);
+    border-radius: 50%;
+}
+
+.podatki-racuna * {
+    margin: 0;
+}
+
+.kraj-objave {
+    margin: 0;
+}
+
+/*Glavna slika*/
+.objava-slika {
+    max-width: clamp(20rem, 40vw + 1px, 30rem);
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 25rem) {
+    .objava-slika {
+        max-width: 100%;
+    }
+}
+
+/*Gumbi*/
+.moznosti-dejanj {
+    margin-top: .5rem;
+    display: flex;
+    column-gap: .3rem;
+}
+
+.gumb-vsecek {
+    background: url("slike/slika-srce.png") no-repeat;
+}
+
+.gumb-opomba {
+    background: url("slike/slika-opomba.png") no-repeat;
+}
+
+.gumb-deli {
+    background: url("slike/slika-zs.png") no-repeat;
+}
+
+.gumb-vsecek:hover {
+    background: url("slike/slika-srce-hover.png") no-repeat;
+    background-size: cover;
+}
+
+.moznosti-dejanj .gumb-vsecek-dejavno {
+    background: url("slike/slika-srce-pritisnjeno.png") no-repeat;
+    background-size: cover;
+}
+
+.gumb-opomba:hover {
+    background: url("slike/slika-opomba-hover.png") no-repeat;
+    background-size: cover;
+}
+
+.gumb-deli:hover {
+    background: url("slike/slika-zs-hover.png") no-repeat;
+    background-size: cover;
+}
+
+.gumb-vsecek:active {
+    background: url("slike/slika-srce-pritisnjeno.png") no-repeat;
+    background-size: cover;
+}
+
+.gumb-dejanj {
+    cursor: pointer;
+    background-size: cover;
+    padding: .9rem .9rem;
+    border: 0;
+}
+
+/*St. vseckov in opombe*/
+.stevilo-vseckov, .opomba {
+    font-weight: bold;
+}
+
+.stevilo-vseckov {
+    margin: .7rem 0 .2rem 0;
+}
+
+.opomba {
+    margin: 0;
+}
+
+.opomba > span {
+    font-weight: normal;
+}
