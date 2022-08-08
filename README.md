@@ -1,4 +1,4 @@
-# Stran-Slovenske-Konjice
+# Stran-Starogram
 Spletna stran za prikaz prastarih načinov slik s podobami znanih slikarjev,
 ki so podobni današnjim. Izdelana za vajo HTML/CSS/JAVASCRIPT.
 <br>
