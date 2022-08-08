@@ -2,7 +2,7 @@
 Spletna stran za prikaz prastarih načinov slik s podobami znanih slikarjev,
 ki so podobni današnjim. Izdelana za vajo HTML/CSS/JAVASCRIPT.
 <br>
-<a href="https://jaboticnik.github.io/Stran-Slovenske-Konjice/">Predogled</a> v živo.
+<a href="https://jaboticnik.github.io/Starogram/">Predogled</a> v živo.
 <br>
 Slike:
 <br>
